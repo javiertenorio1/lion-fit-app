@@ -13,12 +13,12 @@ export default function Agenda() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Tarjeta de reserva futura */}
-          <div className="bg-blue-900/10 border border-blue-500/20 rounded-2xl p-5 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-5 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-lion-blue/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
             
             <div className="flex justify-between items-start mb-4 relative z-10">
               <div className="flex flex-col">
-                <span className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-1">Mañana</span>
+                <span className="text-sm font-semibold text-lion-blue uppercase tracking-wider mb-1">Mañana</span>
                 <span className="text-xl font-bold text-white">19:00</span>
               </div>
               <button className="text-gray-500 hover:text-red-400 p-2 transition-colors tooltip" title="Cancelar reserva">
@@ -45,7 +45,7 @@ export default function Agenda() {
       <div className="mt-8 flex flex-col gap-4">
         <h2 className="text-xl font-semibold text-white mb-2">Historial</h2>
         
-        <div className="bg-[#151A23] border border-gray-800 rounded-2xl overflow-hidden">
+        <div className="bg-lion-card border border-gray-800 rounded-2xl overflow-hidden">
           <div className="p-4 border-b border-gray-800/50 flex justify-between items-center bg-gray-900/20">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">

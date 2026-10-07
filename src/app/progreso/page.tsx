@@ -12,16 +12,16 @@ export default function Progreso() {
         
         {/* Estadísticas Rápidas */}
         <div className="lg:col-span-1 flex flex-col gap-4">
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
-            <div className="p-4 bg-blue-500/10 rounded-xl">
-              <TrendingUp className="w-6 h-6 text-blue-500" />
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
+            <div className="p-4 bg-lion-blue/10 rounded-xl">
+              <TrendingUp className="w-6 h-6 text-lion-blue" />
             </div>
             <div>
               <p className="text-sm text-gray-400 font-medium">Clases Asistidas</p>
               <p className="text-2xl font-bold text-white">47</p>
             </div>
           </div>
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
             <div className="p-4 bg-emerald-500/10 rounded-xl">
               <Award className="w-6 h-6 text-emerald-500" />
             </div>
@@ -30,7 +30,7 @@ export default function Progreso() {
               <p className="text-2xl font-bold text-white">3 semanas</p>
             </div>
           </div>
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 flex items-center gap-4">
             <div className="p-4 bg-orange-500/10 rounded-xl">
               <Target className="w-6 h-6 text-orange-500" />
             </div>
@@ -43,9 +43,9 @@ export default function Progreso() {
 
         {/* Timeline de Notas */}
         <div className="lg:col-span-2">
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 md:p-8">
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 md:p-8">
             <h2 className="text-xl font-semibold text-white mb-8 flex items-center gap-2">
-              <FileText className="text-blue-500" size={20} />
+              <FileText className="text-lion-blue" size={20} />
               Evaluaciones y Notas
             </h2>
 
@@ -53,7 +53,7 @@ export default function Progreso() {
               
               {/* Nota 1 */}
               <div className="relative pl-8">
-                <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1 border-4 border-[#151A23]"></div>
+                <div className="absolute w-4 h-4 bg-lion-blue rounded-full -left-[9px] top-1 border-4 border-lion-card"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
                   <span className="text-sm font-bold text-white">Evaluación Mensual</span>
                   <span className="text-xs text-gray-500 font-medium">Hace 2 semanas • Ismael</span>
@@ -65,7 +65,7 @@ export default function Progreso() {
 
               {/* Nota 2 */}
               <div className="relative pl-8">
-                <div className="absolute w-4 h-4 bg-gray-600 rounded-full -left-[9px] top-1 border-4 border-[#151A23]"></div>
+                <div className="absolute w-4 h-4 bg-gray-600 rounded-full -left-[9px] top-1 border-4 border-lion-card"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
                   <span className="text-sm font-bold text-white">Nota de sesión</span>
                   <span className="text-xs text-gray-500 font-medium">Hace 1 mes • Profe Luis</span>
@@ -77,7 +77,7 @@ export default function Progreso() {
 
               {/* Nota 3 */}
               <div className="relative pl-8">
-                <div className="absolute w-4 h-4 bg-gray-600 rounded-full -left-[9px] top-1 border-4 border-[#151A23]"></div>
+                <div className="absolute w-4 h-4 bg-gray-600 rounded-full -left-[9px] top-1 border-4 border-lion-card"></div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
                   <span className="text-sm font-bold text-white">Ingreso</span>
                   <span className="text-xs text-gray-500 font-medium">Hace 3 meses • Ismael</span>

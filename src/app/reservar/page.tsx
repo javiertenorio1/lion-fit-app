@@ -8,7 +8,7 @@ export default function Reservar() {
           <h1 className="text-[28px] md:text-[32px] font-bold text-white tracking-tight">Reservar Clase</h1>
           <p className="text-gray-400 mt-1">Selecciona el horario para tu próxima sesión.</p>
         </div>
-        <div className="flex bg-[#151A23] rounded-lg border border-gray-800 p-1 w-fit">
+        <div className="flex bg-lion-card rounded-lg border border-gray-800 p-1 w-fit">
           <button className="px-4 py-1.5 text-sm font-medium bg-gray-800 text-white rounded-md shadow-sm">Hoy</button>
           <button className="px-4 py-1.5 text-sm font-medium text-gray-400 hover:text-white">Mañana</button>
         </div>
@@ -70,13 +70,13 @@ function ClassCard({ time, title, trainer, location, capacity, booked, type, isF
   time: string, title: string, trainer: string, location: string, capacity: number, booked: number, type: string, isFull?: boolean
 }) {
   return (
-    <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 flex flex-col hover:border-gray-600 transition-colors">
+    <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 flex flex-col hover:border-gray-600 transition-colors">
       <div className="flex justify-between items-start mb-4">
         <div className="flex flex-col">
-          <span className="text-2xl font-bold text-blue-500 tracking-tight">{time}</span>
+          <span className="text-2xl font-bold text-lion-blue tracking-tight">{time}</span>
           <span className="text-lg font-bold text-white mt-1 leading-tight">{title}</span>
         </div>
-        <span className={`text-[10px] uppercase font-bold tracking-wider px-2 py-1 rounded-full border ${isFull ? 'bg-red-500/10 text-red-400 border-red-500/20' : 'bg-blue-600/20 text-blue-400 border-blue-600/30'}`}>
+        <span className={`text-[10px] uppercase font-bold tracking-wider px-2 py-1 rounded-full border ${isFull ? 'bg-red-500/10 text-red-400 border-red-500/20' : 'bg-lion-blue/20 text-lion-blue border-lion-blue/30'}`}>
           {type}
         </span>
       </div>
@@ -105,7 +105,7 @@ function ClassCard({ time, title, trainer, location, capacity, booked, type, isF
         </div>
         <button 
           disabled={isFull}
-          className={`px-6 py-2.5 rounded-xl font-medium transition-colors ${isFull ? 'bg-gray-800 text-gray-500 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
+          className={`px-6 py-2.5 rounded-xl font-medium transition-colors ${isFull ? 'bg-gray-800 text-gray-500 cursor-not-allowed' : 'bg-lion-blue hover:bg-lion-blue-hover text-white'}`}
         >
           {isFull ? 'Lleno' : 'Reservar'}
         </button>

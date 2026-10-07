@@ -12,17 +12,17 @@ export default function Perfil() {
         
         {/* Datos Personales */}
         <div className="md:col-span-2 flex flex-col gap-6">
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6 relative">
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6 relative">
             <button className="absolute top-6 right-6 text-gray-500 hover:text-white transition-colors">
               <Edit3 size={18} />
             </button>
             
             <div className="flex items-center gap-6 mb-8">
-              <div className="w-20 h-20 rounded-full bg-blue-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
-                JT
+              <div className="w-20 h-20 rounded-full bg-lion-blue flex items-center justify-center text-3xl font-bold text-white shadow-lg">
+                JM
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">Javier Tenorio</h2>
+                <h2 className="text-2xl font-bold text-white">Javier Martínez</h2>
                 <p className="text-gray-400">Deportista Lion Fit</p>
               </div>
             </div>
@@ -38,9 +38,9 @@ export default function Perfil() {
 
         {/* Plan Actual */}
         <div className="flex flex-col gap-6">
-          <div className="bg-[#151A23] border border-gray-800 rounded-2xl p-6">
+          <div className="bg-lion-card border border-gray-800 rounded-2xl p-6">
             <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
-              <CreditCard className="text-blue-500" size={20} />
+              <CreditCard className="text-lion-blue" size={20} />
               SuscripciÃ³n Actual
             </h3>
 
@@ -54,10 +54,10 @@ export default function Perfil() {
               <div className="w-full bg-gray-900 rounded-xl p-4 border border-gray-800 mb-6">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm font-medium text-gray-300">Clases disponibles</span>
-                  <span className="text-lg font-bold text-blue-400">8 / 12</span>
+                  <span className="text-lg font-bold text-lion-blue">8 / 12</span>
                 </div>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div className="bg-blue-500 h-2 rounded-full" style={{ width: '66%' }}></div>
+                  <div className="bg-lion-blue h-2 rounded-full" style={{ width: '66%' }}></div>
                 </div>
               </div>
 
