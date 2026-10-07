@@ -4,6 +4,8 @@ import "./globals.css";
 import Link from "next/link";
 import { Home, CreditCard, Search, Calendar, User, FileText, LogOut, ChevronDown, Users } from "lucide-react";
 
+import { SidebarLink, BottomNavLink, MobilePageTitle } from "../components/ClientLinks";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
@@ -32,7 +34,7 @@ export default function RootLayout({
                 <nav className="flex flex-col gap-2">
                   <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 ml-2">Menú Principal</span>
                   
-                  <SidebarLink href="/" icon={<Home size={20} />} label="Inicio" active />
+                  <SidebarLink href="/" icon={<Home size={20} />} label="Inicio" />
                   <SidebarLink href="/planes" icon={<CreditCard size={20} />} label="Planes" />
                   <SidebarLink href="/reservar" icon={<Search size={20} />} label="Reservar" />
                   <SidebarLink href="/agenda" icon={<Calendar size={20} />} label="Mi agenda" />
@@ -83,7 +85,7 @@ export default function RootLayout({
               
               {/* Mobile Title */}
               <div className="md:hidden w-full mt-2">
-                <h1 className="text-xl font-bold text-white m-0 leading-tight" id="mobile-page-title">Inicio</h1>
+                <MobilePageTitle />
               </div>
             </header>
 
@@ -97,30 +99,12 @@ export default function RootLayout({
 
         {/* BOTTOM NAV (Mobile) */}
         <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#151A23] border-t border-gray-800 flex items-center justify-around h-[70px] z-50 px-2 pb-2">
-          <BottomNavLink href="/" icon={<Home size={22} />} label="Inicio" active />
+          <BottomNavLink href="/" icon={<Home size={22} />} label="Inicio" />
           <BottomNavLink href="/planes" icon={<CreditCard size={22} />} label="Planes" />
           <BottomNavLink href="/reservar" icon={<Search size={22} />} label="Reservar" />
           <BottomNavLink href="/agenda" icon={<Calendar size={22} />} label="Agenda" />
         </nav>
       </body>
     </html>
-  );
-}
-
-function SidebarLink({ href, icon, label, active = false }: { href: string, icon: React.ReactNode, label: string, active?: boolean }) {
-  return (
-    <Link href={href} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all ${active ? 'bg-blue-600 text-white' : 'text-gray-400 hover:bg-gray-800 hover:text-white'}`}>
-      {icon}
-      <span className="font-medium">{label}</span>
-    </Link>
-  );
-}
-
-function BottomNavLink({ href, icon, label, active = false }: { href: string, icon: React.ReactNode, label: string, active?: boolean }) {
-  return (
-    <Link href={href} className={`flex flex-col items-center gap-1 p-2 min-w-[64px] ${active ? 'text-blue-500' : 'text-gray-500'}`}>
-      {icon}
-      <span className="text-[10px] font-medium">{label}</span>
-    </Link>
   );
 }
