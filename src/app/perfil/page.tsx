@@ -22,7 +22,7 @@ export default function Perfil() {
                 JM
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-white">Javier Martínez</h2>
+                <h2 className="text-2xl font-bold text-white">Javier MartÃ­nez</h2>
                 <p className="text-gray-400">Deportista Lion Fit</p>
               </div>
             </div>
